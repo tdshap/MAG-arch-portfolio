@@ -1,0 +1,23 @@
+body { margin: 0; }
+
+img { border: 0; }
+
+header { height: 75px; width: 100%; background-color: #888986; color: #D7C655; }
+
+nav ul { float: right; }
+
+nav ul li { display: inline-block; padding: 10px; }
+
+nav ul .nav-contact { border-right: 50px; }
+
+section { height: 250px; width: 100%; }
+
+div.name { width: 250px; height: 170px; display: inline-block; }
+
+h3 { display: inline-block; text-align: center; }
+
+section.dance-studio div.name { background: url("../images/dance-studio-sign.png"); background-position: center center; background-size: cover; background-repeat: no-repeat; }
+
+section.elementry-school div.name { background: url("../images/elementry-school-sign.png"); background-position: center center; background-size: cover; background-repeat: no-repeat; }
+
+.hidden { display: none; }
