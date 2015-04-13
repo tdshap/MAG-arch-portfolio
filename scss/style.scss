@@ -1,4 +1,4 @@
-// mixins //
+/* MIXINS */
 
 @mixin backgrounder($url, $position, $size){
 	background: $url;
@@ -18,18 +18,41 @@
 	position: absolute;
 }
 
-$grey: rgb(136, 137, 134);
+$grey: #3B3131;
 $yellow: #D7C655;
+$white: #E8E6E6;
+
+
+@font-face {
+  font-family: 'ostrich';
+  src:  url('fonts/ostich-sans/ostrich-bold.ttf') format('ttf');
+}
+
+
+
+
 body {
 	margin: 0;
+	background-color: $grey;
+	font-family: ostrich;
+	color: white;
+	height: 100%;
+	width: 100%;
 }
 img {
   border: 0;
 }
+
+
+/* 
+===============================================
+OLD! NAV BAR 
+===============================================
+*/
 header{
 	height: 75px;
 	width: 100%;
-	background-color: $grey;
+	/*background-color: $white;*/
 	// font-family: ;
 	color: $yellow ;
 }
@@ -48,11 +71,12 @@ nav ul .nav-contact{
 	border-right: 50px;
 }
 section{
-
-}
-section{
-	height: 250px;
 	width: 100%;
+	height: 100vh;
+	/*margin-left: 2.5%;*/
+	/*margin-top: 10px;*/
+	/*border: solid 1px $white;*/
+
 }
 div.name{
 	@include sizing(250px, 170px);
@@ -62,19 +86,152 @@ h3{
 	display: inline-block;
 	text-align: center;
 }
-section.dance-studio div.name{
-	@include backgrounder(url("../images/dance-studio-sign.png"), center center, cover);
+
+/* 
+===============================================
+sections parallax
+===============================================
+*/
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
 }
-section.elementry-school div.name{
-	@include backgrounder(url("../images/elementry-school-sign.png"), center center, cover);
+
+.hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
+.hsContent {
+    max-width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+    .hsContent h2  {
+        color: #fff8de;
+        background-color: rgba(0,0,0,0.5);
+        padding: 10px 5px;
+        font-size: 35px;
+        line-height: 38px;
+        margin-bottom: 12px;
+    }
+    .hsContent p {
+        width: 400px;
+        color: #b2b2b2;
+    }
+    .hsContent a {
+        color: #b2b2b2;
+        text-decoration: underline;
+    }
 
 
+/* Slide 1 */
+#slide-1 .bcg {
+    background-image:url('../img/bath-house/opener.jpg');
+    background-size: cover;
+}
+#slide-1 .hsContent {
+	bottom: 200px;
+	top: auto;
+}
+
+/* Slide 2 */
+/*#slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
+#slide-2 .hsContent {
+	margin-left: -450px;
+	bottom: 200px;
+	top: auto;
+}*/
+#slide-2 .bcg {background-image:url('../img/bath-house/front-perspective.jpg');
+background-size: 50%;
+}
+#slide-2 .hsContent {
+    width: 1600px;
+}
+#slide-2 h2 {
+    position: fixed;
+    top: 70%;
+}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('../img/bath-house/site-plan.jpg');
+background-size: cover;}
+#slide-3 .hsContent {
+	margin-left: -239px;
+}
+	#slide-3 h2 {
+		color: #f2ead6;
+		background-color: rgba(0,0,0,0.6);
+	}
+
+/* Slide 4 */
+#slide-4 .bcg {
+    background-image:url('../img/bath-house/diagrams.pdf');
+    background-size: cover;
+}
+#slide-4 .hsContent {
+	margin-left: -450px;
+}
+	#slide-4 h2 {
+		background: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+/* Slide 5 */
+#slide-5 .bcg {background-image:url('../img/bath-house/site-axon.jpg');
+background-size: cover;}
+#slide-5 .hsContent {
+    margin-left: -450px;
+}
+    #slide-5f h2 {
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+/* Slide 6 */
+#slide-6 .bcg {background-image:url('../img/bath-house/site-axon.jpg');
+background-size: cover;}
+#slide-6 .hsContent {
+    margin-left: -450px;
+}
+#slide-6f h2 {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+}
 
 // classes to add
 .hidden{
 	display: none;
 }
+
+
+
+
+/* intro */
+.intro{
+	height: 200vh;
+}
+section.intro h2{
+	text-align: center;
+	min-width: 30%;
+	margin: 300px auto;
+	font-size: 40px;
+	display: none;
+}
+
+
+
+
+
 
 
