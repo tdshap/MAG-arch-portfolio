@@ -23,18 +23,10 @@ $yellow: #D7C655;
 $white: #E8E6E6;
 
 
-@font-face {
-  font-family: 'ostrich';
-  src:  url('fonts/ostich-sans/ostrich-bold.ttf') format('ttf');
-}
-
-
-
-
 body {
 	margin: 0;
 	background-color: $grey;
-	font-family: ostrich;
+	font-family: ostrich_sans_bold;
 	color: white;
 	height: 100%;
 	width: 100%;
@@ -52,9 +44,9 @@ OLD! NAV BAR
 header{
 	height: 75px;
 	width: 100%;
-	/*background-color: $white;*/
-	// font-family: ;
+	position: fixed;
 	color: $yellow ;
+	top: 30px;
 }
 nav{
 	
@@ -115,6 +107,8 @@ sections parallax
     top: 50%;
 }
     .hsContent h2  {
+    	stroke-dasharray: 1000px;
+    	animation: dash 5s linear;
         color: #fff8de;
         background-color: rgba(0,0,0,0.5);
         padding: 10px 5px;

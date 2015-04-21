@@ -1,0 +1,254 @@
+// Place all the styles related to the Routes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* MIXINS */
+
+@mixin backgrounder($url, $position, $size){
+	background: $url;
+	background-position: $position;
+	background-size: $size;
+	background-repeat: no-repeat;
+}
+
+@mixin sizing($width, $height){
+	width: $width;
+	height: $height;
+}	
+
+@mixin positioning($left, $top){
+	left: $left;
+	top: $top;
+	position: absolute;
+}
+
+$grey: #3B3131;
+$yellow: #D7C655;
+$white: #E8E6E6;
+
+
+body {
+	margin: 0;
+	background-color: $grey;
+	font-family: ostrich_sans_bold;
+	color: white;
+	height: 100%;
+	width: 100%;
+	max-width: 100vw;
+}
+img {
+  border: 0;
+}
+
+
+/* 
+===============================================
+OLD! NAV BAR 
+===============================================
+*/
+header{
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	color: $yellow ;
+	top: 30px;
+}
+nav{
+	
+}
+nav ul{
+	float: right;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 10px;
+}
+nav ul .nav-contact{
+	border-right: 50px;
+}
+section{
+	width: 100%;
+	height: 100vh;
+}
+div.name{
+	@include sizing(250px, 170px);
+	display: inline-block;
+}
+h3{
+	display: inline-block;
+	text-align: center;
+}
+
+.intro{
+	;
+}
+/* intro */
+.intro{
+	height: 200vh;
+	background-image:url("/assets/Splashpage/slpashpage.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.title h2{
+	position: relative;
+	min-width: 30%;
+	left: 50%;
+	padding-top: 30%;
+	font-size: 40px;
+	background-color: transparent;
+	
+}
+.architecture{
+	background-image: url("/assets/bath-house/opener.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300vh;
+	background-attachment: fixed;
+}
+.bath-house-1{
+	background-image: url("/assets/bath-house/front-perspective.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 80% 50%;
+	height: 200vh;
+	background-attachment: fixed;
+}
+.info{
+	background: $grey;
+	height: 200vh;
+	width: 40%;
+	min-width: 300px;
+	max-width: 600px;	
+	position: absolute;
+	padding: 0 20px 0 100px;
+
+}
+.info > p{
+	color: white;
+	line-height: 150%;
+
+}
+
+/* 
+===============================================
+sections parallax
+===============================================
+*/
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hsContent {
+  max-width: 700px;
+  position: absolute;
+  left: 50%;
+  margin-top: 50%;
+}
+
+/* Slide 1 */
+#slide-1 .bcg {
+    background-image:url('/assets/bath-house/opener.jpg');
+    background-size: cover;
+}
+#slide-1 .hsContent {
+	bottom: 200px;
+	top: auto;
+}
+
+/* Slide 2 */
+/*#slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
+#slide-2 .hsContent {
+	margin-left: -450px;
+	bottom: 200px;
+	top: auto;
+}*/
+#slide-2 .bcg {background-image:url('/assets/bath-house/front-perspective.jpg');
+background-size: 50%;
+}
+#slide-2 .hsContent {
+    width: 1600px;
+}
+#slide-2 h2 {
+    position: fixed;
+    top: 70%;
+}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('/assets/bath-house/site-plan.jpg');
+background-size: cover;}
+#slide-3 .hsContent {
+	margin-left: -239px;
+}
+	#slide-3 h2 {
+		color: #f2ead6;
+		background-color: rgba(0,0,0,0.6);
+	}
+
+/* Slide 4 */
+#slide-4 .bcg {
+    background-image:url('/assets/bath-house/diagrams.pdf');
+    background-size: cover;
+}
+#slide-4 .hsContent {
+	margin-left: -450px;
+}
+	#slide-4 h2 {
+		background: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+/* Slide 5 */
+#slide-5 .bcg {background-image:url('/assets/bath-house/site-axon.jpg');
+background-size: cover;}
+#slide-5 .hsContent {
+    margin-left: -450px;
+}
+    #slide-5f h2 {
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+/* Slide 6 */
+#slide-6 .bcg {background-image:url('/assets/bath-house/site-axon.jpg');
+background-size: cover;}
+#slide-6 .hsContent {
+    margin-left: -450px;
+}
+#slide-6f h2 {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+// classes to add
+.hidden{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

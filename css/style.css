@@ -1,6 +1,5 @@
 /* MIXINS */
-@font-face { font-family: 'ostrich'; src: url("fonts/ostich-sans/ostrich-bold.ttf") format("ttf"); }
-body { margin: 0; background-color: #3B3131; font-family: ostrich; color: white; height: 100%; width: 100%; }
+body { margin: 0; background-color: #3B3131; font-family: ostrich_sans_bold; color: white; height: 100%; width: 100%; }
 
 img { border: 0; }
 
@@ -9,7 +8,7 @@ img { border: 0; }
 OLD! NAV BAR 
 ===============================================
 */
-header { height: 75px; width: 100%; /*background-color: $white;*/ color: #D7C655; }
+header { height: 75px; width: 100%; position: fixed; color: #D7C655; top: 30px; }
 
 nav ul { float: right; }
 
@@ -34,7 +33,7 @@ sections parallax
 
 .hsContent { max-width: 700px; position: absolute; left: 50%; top: 50%; }
 
-.hsContent h2 { color: #fff8de; background-color: rgba(0, 0, 0, 0.5); padding: 10px 5px; font-size: 35px; line-height: 38px; margin-bottom: 12px; }
+.hsContent h2 { stroke-dasharray: 1000px; -webkit-animation: dash 5s linear; animation: dash 5s linear; color: #fff8de; background-color: rgba(0, 0, 0, 0.5); padding: 10px 5px; font-size: 35px; line-height: 38px; margin-bottom: 12px; }
 
 .hsContent p { width: 400px; color: #b2b2b2; }
 
