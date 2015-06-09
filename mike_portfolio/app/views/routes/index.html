@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" href="/assets/routes.css">
-
 <header>
 	<div class="logo"></div>
 	<nav>
@@ -14,90 +12,57 @@
 				<li class="nav-contact">Contact</li>
 			</ul>
 	</nav>
+
 </header>
 
+<div class="container">
+	<section class="intro"></section>
+ 	<section class="architecture">
+    <div class="row">
+	    <div class="ten columns">
+				<div class="car-wrapper clearfix">
+					<div id="arch-prev"><</div>
+					<div id="arch-next">></div>
+					<ul id="foo0">
+						<li class="i1"></li>
+						<li class="i2"></li>
+						<li class="i3"></li>
+						<li class="i4"></li>
+						<li class="i5"></li>
+						<li class="i6"></li>
+						<li class="i7"></li>
+					</ul>
+				</div>
+	    </div>
+	    <div class="two columns">Two</div>
+    </div>
+  </section>
+	
+	<section class="urban-design"></section>
+	<section class="blog"></section>
+</div><!-- end skeleton container -->
 
-<section class="intro"
+<script type="text/javascript">
+	//	Basic carousel, no options
+	$('#foo0').carouFredSel({
+		// responsive: true,
+		width: '100%',
+		auto: false,
+		prev: "#arch-prev",
+		next: "#arch-next",
+		// scroll: 2,
+		items: {
+			// width: "300px",
+			// height: '300px',	//	optionally resize item-height
+			visible: {
+				min: 1,
+				max: 1
+			}
+		}
+	});
 
-
-
->
-	<div class="title">
-		<h2
-		data-start="opacity: 1; padding-top: 30%"
-		data-300-start="opacity: 0; padding-top: 20%"
-		>Michael A Geller
-		<br>Architecture</h2> 
-	</div>
-	  
-</section>
-
-<section class="architecture">
-	<div class="title"
-	>
-		<h2
-
-			data-bottom-top="top: 50px; left: 0"
-			data--100-top="top: 100px; left: 220px"
-		>Liepāja, Latvia
-		<br>
-		Bath House Proposal
-	</h2>
-
-
-</div>
-
-</section>
-<section class="bath-house-1">
-	<div class="info"
-		
-		data-top="left: -800px"
-		data--100-top="left: 10px"
-		data--300-top="left: 10px"
-		data--400-top="left: -800px"
-	>
-		<br>
-	<br>
-	<br>
-			<br>
-	<br>
-	<br>
-			<br>
-	<br>
-	<br>
-			<br>
-	<br>
-	<br>
-			<br>
-	<br>
-	<br>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum ante vitae dolor suscipit, eget eleifend nisi laoreet. Quisque nec molestie lacus, nec lacinia odio. Nunc sit amet enim vel dolor consequat vulputate finibus maximus est. Ut ex turpis, aliquet ut semper at, sagittis ut lectus. Nulla viverra tellus ut dui fringilla, nec sodales leo placerat. Fusce non nibh nec arcu suscipit interdum eu eu mi. Sed in mauris non erat ullamcorper tempor. Integer non metus mattis, faucibus tortor eget, interdum nisl. Praesent in semper lacus.</p>
-<br>
-			<p> Nullam velit justo, rhoncus in ante sed, accumsan tincidunt diam. Donec sagittis luctus pharetra. Nulla commodo vitae ante quis malesuada. Nulla imperdiet ex non vehicula facilisis. Quisque posuere, odio a sagittis tempor, augue magna gravida lectus, id dignissim mauris ipsum eu eros. Nulla convallis ultricies tortor, vehicula bibendum odio auctor vel. Proin eu consequat turpis. Nam in quam semper enim finibus cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec enim fringilla, egestas tortor sed, iaculis nisl. Donec ac ligula mauris. Cras ut pretium orci. Vestibulum nec enim sed libero interdum congue eget vitae velit. In quis dui risus. Etiam a tempus dui, bibendum tempor leo. Sed imperdiet nisl erat, vitae maximus mauris posuere eu.
-		</p>
+</script>
 
 
-
-	</div>
-</section>
-
-<section class="urban_design">
-	<div
-	data-center="background-position: 50% 0px;"
-	data-top-bottom="background-position: 50% -100px;"
-	data-bottom-top="background-position: 50% 100px;"
-	>
-		<div>
-			<div
-			data--50-bottom="opacity: 0;"
-			data--200-bottom="opacity: 1;"
-			>URBAN Design </div>
-		</div>
-	</div>
-</section>
-
-<section class="bath_house">
-</section>
 
 

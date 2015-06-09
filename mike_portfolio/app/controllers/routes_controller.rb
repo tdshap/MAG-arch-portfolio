@@ -9,4 +9,7 @@ class RoutesController < ApplicationController
  def urban_design
  end
 
+ def bath_house
+ end
+
 end

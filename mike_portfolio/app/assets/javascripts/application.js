@@ -17,6 +17,7 @@
 //= require skrollr.js
 //= require underscore.js
 //= require backbone.js
+//= require carousel.js
 
 
 //= require app.js

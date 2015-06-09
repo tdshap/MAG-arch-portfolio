@@ -11,9 +11,10 @@
  * file per style scope.
  *
  * require_tree .
+ *= require normalize.css
  *= require_self
  *= require_fonts/ostrich-bold.css
- *= require_routes.css.scss
-	
+ *= require routes.css.scss
+ *= require skeleton.css
  */
  
